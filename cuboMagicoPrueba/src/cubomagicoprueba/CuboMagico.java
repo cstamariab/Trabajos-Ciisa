@@ -13,8 +13,7 @@ public class CuboMagico {
 
     boolean cuboMagicoEstado;
 
-    public CuboMagico() {
-        this.cuboMagicoEstado = true;
+    public CuboMagico() {        
         this.resuelve_cuadrado();
     }
 
