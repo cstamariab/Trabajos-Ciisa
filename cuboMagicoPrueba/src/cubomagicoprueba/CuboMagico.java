@@ -26,9 +26,7 @@ public class CuboMagico {
        
         for (int valor_casilla = 1; valor_casilla <= total_casillas; valor_casilla++) {            
             cubo[x][y] = valor_casilla;
-            // guardo posiciones actuales
-            int a_x = x;
-            int a_y = y;            
+                
             //avanzo a la derecha 
             x++;
             // si supero el limite derecho vuelvo al comienzo 
@@ -44,9 +42,8 @@ public class CuboMagico {
 
             }
             //si la posicion esta ocupada , aumento la "y" en 1 y mantengo el "x"
-            if (cubo[x][y] > 0) {
-                x = a_x;
-                y = a_y + 1;
+            if (cubo[x][y] > 0) {               
+                y++;
             }
         }
         return cubo;
